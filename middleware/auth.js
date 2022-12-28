@@ -19,5 +19,3 @@ module.exports.isAuthorized = function (req, res, next,result) {
         res.status(401).send("User ou pass errados");
     }
 }
-
-

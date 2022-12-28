@@ -73,7 +73,7 @@ router.post('/storemessages/:guildId', (req, res) => {
                 });
                 foundGuild.markModified('authors');
                 foundGuild.save();
-                res.status(200).send('messages stored for ' + req.params.guildId);
+                res.status(200).send('messages stored for guild' + req.params.guildId);
             })
             .catch(err => {
                 console.log(err);
